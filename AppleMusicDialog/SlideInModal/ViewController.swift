@@ -32,24 +32,27 @@ class ViewController: UIViewController{
         //need to have some gaurds and handle pushing
         //the toolbar down, but this is the basic premise.
         let change:CGFloat = sender.translationInView(view).y
+
         if sender.state == .Began {
             self.gestureStartHeight = self.modalHeightConstraint.constant
         }
 
         let timing = sender.state == .Ended ? 0.25 : 0.01
-        let height = self.view.frame.height
+        let height = UIApplication.sharedApplication().keyWindow?.frame.height ?? 0.0
 
         UIView.animateWithDuration(timing){
 
-            let newSize = min(height,
-                max(self.gestureStartHeight - change - self.toolbarToBottom.constant, self.startingSize))
-
+            var newSize = max(self.gestureStartHeight - change, self.startingSize)
+            newSize = self.startingSize == self.gestureStartHeight ?  min(height, newSize) : newSize
             self.modalHeightConstraint.constant = newSize
 
             self.toolbarToBottom.constant = -self.toolbarHeightConstraint.constant * (newSize/height)
 
             if sender.state == .Ended {
-                if self.gestureStartHeight != self.startingSize || newSize == self.startingSize {
+                let ease:CGFloat = 70.0
+                let startedFullScreen = self.gestureStartHeight != self.startingSize
+
+                if  ((startedFullScreen && change >= ease) || (newSize <= (self.startingSize + ease))) {
                     self.modalHeightConstraint.constant = self.startingSize
                     self.toolbarToBottom.constant = 0.0
                 }else{

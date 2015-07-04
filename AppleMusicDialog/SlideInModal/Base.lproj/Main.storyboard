@@ -22,20 +22,20 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x1v-fj-gNn" userLabel="Vibrancy Container">
-                                <rect key="frame" x="0.0" y="515" width="600" height="85"/>
+                                <rect key="frame" x="0.0" y="510" width="600" height="90"/>
                                 <subviews>
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eU9-Yf-sc8">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="85"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qmE-OW-bb4">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="85"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </view>
                                         <blurEffect style="light"/>
                                     </visualEffectView>
                                     <containerView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H6C-dO-x7o">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="35"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="1QE-wf-IiI"/>
+                                            <constraint firstAttribute="height" constant="40" id="1QE-wf-IiI"/>
                                         </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="1ic-qp-R9s" appends="YES" id="ULG-Nm-4Th"/>
@@ -43,7 +43,7 @@
                                         </connections>
                                     </containerView>
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zjO-hJ-By9" userLabel="ToobarView">
-                                        <rect key="frame" x="0.0" y="35" width="600" height="50"/>
+                                        <rect key="frame" x="0.0" y="40" width="600" height="50"/>
                                         <subviews>
                                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.79999999999999982" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTo-sZ-rAi">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
@@ -126,19 +126,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXd-4K-5x9">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="35.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yU-Vm-Ja0">
-                                        <rect key="frame" x="570" y="7" width="22" height="22"/>
+                                        <rect key="frame" x="570" y="9.5" width="22" height="22"/>
                                         <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6U-xH-J91">
-                                        <rect key="frame" x="8" y="7" width="22" height="22"/>
+                                        <rect key="frame" x="8" y="9.5" width="22" height="22"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dead President" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJS-Ub-4rs">
-                                        <rect key="frame" x="243.5" y="9" width="114.5" height="19.5"/>
+                                        <rect key="frame" x="243.5" y="11.5" width="114.5" height="19.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -149,13 +149,13 @@
                                     <constraint firstItem="7yU-Vm-Ja0" firstAttribute="centerY" secondItem="PJS-Ub-4rs" secondAttribute="centerY" constant="-0.5" id="9UI-L3-QZX"/>
                                     <constraint firstAttribute="trailing" secondItem="7yU-Vm-Ja0" secondAttribute="trailing" constant="8" id="b6f-4M-Oh2"/>
                                     <constraint firstAttribute="centerX" secondItem="PJS-Ub-4rs" secondAttribute="centerX" constant="-0.5" id="fZi-DK-7SX"/>
-                                    <constraint firstAttribute="height" constant="35" id="hKn-zw-k8E"/>
+                                    <constraint firstAttribute="height" constant="40" id="hKn-zw-k8E"/>
                                     <constraint firstItem="I6U-xH-J91" firstAttribute="leading" secondItem="GXd-4K-5x9" secondAttribute="leading" constant="8" id="nfK-Da-cOa"/>
                                     <constraint firstItem="7yU-Vm-Ja0" firstAttribute="centerY" secondItem="I6U-xH-J91" secondAttribute="centerY" id="oQ9-YU-Owy"/>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stamp" translatesAutoresizingMaskIntoConstraints="NO" id="d3A-3u-h8V">
-                                <rect key="frame" x="0.0" y="35" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="39.5" width="600" height="600"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="d3A-3u-h8V" secondAttribute="height" multiplier="1:1" id="QKj-tK-h5J"/>
                                 </constraints>
